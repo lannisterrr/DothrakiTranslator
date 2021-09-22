@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #07f8a8;
+  --black: #333333;
+  --width-break: 600px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  color: var(--black);
+}
+
+nav {
+  background-color: var(--primary);
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  max-width: var(--width-break);
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 2rem;
+  font-size: large;
+  font-family: inherit;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  font-family: 'Kalam', cursive;
+  font-size: large;
+}
+
+#output {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 10vh;
+  max-height: 20vh;
+  border: 3px dotted var(--black);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 65%;
+  padding: 1rem;
+  background-color: var(--primary);
+  text-align: center;
+  margin-left: 18rem;
+}
+
+footer p {
+  max-width: var(--width-break);
+  margin: auto;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-center {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #333; /* Blue */
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: none;
+  }
+}
